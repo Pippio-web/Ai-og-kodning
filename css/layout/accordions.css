@@ -1,12 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
- 
-}
-
 .accordion {
-  background-color: Green;
+  background-color: var(--clr-bg1);
+  color: var( --clr-text-dark);
   cursor: pointer;
   width: 100%;
   text-align: left;
@@ -14,6 +8,9 @@
   outline: none;
   transition: 0.4s;
   margin-bottom: 10px;
+
+  max-width: 750px;
+margin-left: 20px;
 }
 
 .accordion__heading {
@@ -24,17 +21,17 @@
   width: 720px;
 }
 
+
 .accordion:hover {
-  background-color: var(--clr4);
-  border: 2px solid var(--clr2);
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text-light);
+
 }
 
 .accordion__content {
   padding: 18px;
   max-width: 720px;
-  background-color: var(--clr3);
   overflow: hidden;
-  color: var(--clr4);
 }
 
 /* Icons */
@@ -46,7 +43,6 @@ summary {
 
 summary::before {
   content: "\02B57";
-  color: var(--clr1);
   font-size: 20px;
   position: absolute;
   left: 0;
@@ -62,7 +58,6 @@ summary::before {
 .accordion:before[open] {
   content: "\02A01"; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: var(--clr1);
   float: right;
   margin: 5px;
 }

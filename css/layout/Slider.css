@@ -1,47 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- 
- 
- 
+
 /* Containeren som slider-billedet indsættes i */
 .slider-container {
-    background-color: rgba(0, 0, 0, 0.306);
-    position: relative;
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text-light);
+  position: relative;
+  max-width: 800px;
+  margin: 20px;
+  text-align: center;
 }
- 
- 
+
+.slider__button {
+  margin: 10px;
+  padding: 8px;
+  font-size: 1.2rem;
+  background-color: var(--clr-bg-dark);
+  border-radius: 30px;
+  min-width: 40px;
+  color: var(--clr-text-light);
+}
+.slider__button a {
+    color: var(--clr-text-light);
+}
+
+.bodyText__h3 {
+  margin: 20px 0 20px;
+}
+
+.bodyText__p {
+  background-color: var(--clr-bg1);
+  color: var(--clr-text-dark);
+  padding: 20px;
+}
+
 /* Dét billede der vises i slideren */
-.image-in-slider{
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    mix-blend-mode: overlay;
- 
+.image-in-slider {
+  width: 100%;
+  object-fit: cover;
 }
- 
+
 .slider-button-link {
-    /* Positionering */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
-    /* Styling */
-    padding: 20px;
-    background-color: rgb(96, 32, 155);
-    color: white;
-    border: none;
-   
-    font-size: 20px;
-    font-weight: 100;
-    z-index: 100;
+  /* Positionering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Styling */
+  padding: 20px;
+
+  color: white;
+  border: none;
+
+  font-size: 20px;
+  font-weight: 100;
+  z-index: 100;
 }
- 
+
 .slider-link {
-    cursor: pointer;
- 
+  cursor: pointer;
 }
- 

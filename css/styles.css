@@ -1,19 +1,6 @@
 body {
   background-color: #e8ede9;
   margin: auto;
-
-}
-
-a {
-  color: var(--clr4-dr);
-}
-
-.p {
-  text-align: center;
-}
-/*button for at give højere aktiv klasse. ændre farve hvis provilen er på favList*/
-button.btnFav--active {
-  color: #d63031;
 }
 
 h1 {
@@ -29,4 +16,5 @@ h1 {
 h2 {
   text-align: center;
   font-size: 30px;
+  margin: 10px 0 30px;
 }

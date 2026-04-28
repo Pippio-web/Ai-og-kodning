@@ -1,35 +1,36 @@
-const cardsContainer = document.querySelector(".cards__container__pia");
+// template function
+const cardTemplate = () => {
+  return `
+        
+        <p class="bodyText bodyText__p"></p>
+        
+   
+        
+    
 
-
-const accordionsData = [
- 
-
-accordionsData.forEach(({ titel, bodytext }) => {
-  accordionsContainer.insertAdjacentHTML(
-    "beforeend",
-    `
-        <details name="requirements" class="accordion">
-        <summary class="accordion__heading">${titel}</summary>
-        <p class="accordion__content">${bodytext}</p>
-    </details>
-    `,
-  );
-});
-
-
-      <div class="card">
+        <div class="card-in-slider" class="card">
         <img src="" alt="" />
-        <div class="heading"></div>
+        <h3 class="card__heading card__bodyText__h3"></h3>
+        <div class="lightgrey"></div>
         <div class="darkgray">
-          <p class="bodyText"> <br /><a href="" class="buttonLink">se mere ...</a></p>
+          <p  class="card__bodyText card__bodyText__p"><br /> <a class="card-link" href="" target="blank">se mere ...</a></p>
         </div>
       </div>
     </div>
+    `;
+};
+const cardContainer = document.querySelector(".cards__container__pia");
+cardContainer.innerHTML = cardTemplate();
+// document.querySelector('.slider-container').innerHTML = sliderTemplate()
+
+const cardInSlider = document.querySelector(".card-in-slider");
+const cardLink = document.querySelector(".card-link");
+
+const cardHeading = document.querySelector(".card__heading");
+const cardBodyText = document.querySelector(".card__bodyText");
 
 
-    let currentImageIndex = 0;
-
-let images = [
+let cards = [
   {
     src: "assets/images/coffee1.jpg",
     alt: "Coffee image",
@@ -53,27 +54,20 @@ let images = [
   },
 ];
 
-
 // Sørger for at putte src, mm. atrubutten på img tagget i html'en
-function setActiveSlide() {
-  imageInSlider.src = images[currentImageIndex].src;
-  imageInSlider.alt = images[currentImageIndex].alt + [currentImageIndex + 1];
-  sliderLink.href = images[currentImageIndex].buttonLink;
-  picOfPictures.innerHTML = [currentImageIndex + 1] + " af " + images.length;
-  heading.textContent = images[currentImageIndex].heading;
-  bodyText.textContent = images[currentImageIndex].bodyText;
+function setActiveCard() {
+  cardLink.href = cards[currentCardIndex].buttonLink;
+  picOfPictures.innerHTML = [currentCardIndex + 1] + " af " + cards.length;
+  heading.textContent = cards[currentCardIndex].cardHeading;
+  bodyText.textContent = cards[currentCardIndex].cardBodyText;
 }
+//
+//const cardContainer = document.querySelector(".cards__container__pia");
+//cardContainer.innerHTML = cardTemplate();
+// document.querySelector('.slider-container').innerHTML = sliderTemplate()
 
-// Kører/kalder funktionen
-setActiveSlide();
+//const cardInSlider = document.querySelector(".card-in-slider");
+//const cardLink = document.querySelector(".card-link");
 
-// funktionen sørger for at currentImageIndex skifter værdi, så billedet i slideren skifter
-const next = () => {
-  if (currentImageIndex < images.length - 1) {
-    currentImageIndex++;
-  } else {
-    currentImageIndex = 0;
-  }
-
-  setActiveSlide();
-};
+//const cardHeading = document.querySelector(".card__heading");
+//const cardBodyText = document.querySelector(".card__bodyText");

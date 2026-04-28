@@ -1,0 +1,13 @@
+.hero {
+  margin-top: 100px;
+  margin-bottom: 30px;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  color: #8f3a3a;
+
+  text-align: center;
+font-size: clamp(1.75rem, 1.3649rem + 1.8957vw, 3rem);
+}

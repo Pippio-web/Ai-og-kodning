@@ -1,0 +1,128 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0305;
+  opacity: 0.9;
+ }
+
+
+
+/* indre container - styrer max-bredde og padding*/
+.header__inner {
+  max-width: 1460px;
+  padding: 0 40px;
+  margin: 0 auto;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* BURGER vises som default */
+
+.mobile__menu__icon {
+  width: 30px;
+  height: 19px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+.hidden__mobil {
+visibility: hidden;
+}
+
+.mobile__menu__icon .bar {
+  width: 100%;
+  height: 3px;
+  background: #491409;
+  transition: 0.3s;
+  z-index: 305;
+}
+/* MOBILE MENU -  (skjult som udgangspunkt)*/
+
+.nav__links {
+  position: fixed;
+  top: clamp(3.5rem, 2rem + 3vw, 5rem);
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(232, 237, 233, 0.99);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* mellemrum */
+  transform: translateX(100);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav__item {
+  color:   #491409;
+
+  text-decoration: none;
+  font-size: 24px;
+
+}
+/* Når links er aktive  */
+.nav__links.active {
+  transform: translate(0);
+  display: flex;
+}
+
+
+/* Burger animation */
+.mobile__menu__icon.toggle .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.mobile__menu__icon.toggle .bar:nth-child(2) {
+  opacity: 0;
+}
+.mobile__menu__icon.toggle .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* DESKTOP MENU  */
+
+@media (min-width: 768px) {
+  /* Burgeren skjules på desktop */
+
+  .mobile__menu__icon {
+    display: none;
+  }
+
+  /*  desktop menu vises vandret */
+  .nav__links {
+    position: static;
+    height: auto;
+    width: auto;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: flex-end;*/
+    transform: none;
+  }
+
+  .nav__item {
+   font-size: 12px;
+  }
+  header {
+     background: #D9D9D9;
+  }
+
+  .hidden__mobil {
+visibility: visible;
+font-size: 1.3rem;
+}
+
+.hidden__pc {
+  visibility: hidden;
+}
+}

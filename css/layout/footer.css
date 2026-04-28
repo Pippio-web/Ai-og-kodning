@@ -1,0 +1,13 @@
+footer{
+    margin-top: 40px;
+    height: 353px;
+    background:  var(--clr3-lr);
+    padding: 30px 0 0 0;
+    width: 100%;
+
+    color:var(--clr4-dr);
+    text-align: center;
+    font-family: 20px;
+    
+
+}

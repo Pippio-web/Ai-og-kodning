@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.accordion {
+  background-color: Green;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.accordion__heading {
+  padding: 18px;
+  padding-left: 60px;
+  font-size: 25px;
+  color: var(--clr1);
+  width: 720px;
+}
+
+.accordion:hover {
+  background-color: var(--clr4);
+  border: 2px solid var(--clr2);
+}
+
+.accordion__content {
+  padding: 18px;
+  max-width: 720px;
+  background-color: var(--clr3);
+  overflow: hidden;
+  color: var(--clr4);
+}
+
+/* Icons */
+summary {
+  list-style: none;
+  padding-left: 30px;
+  position: relative;
+}
+
+summary::before {
+  content: "\02B57";
+  color: var(--clr1);
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px ;
+}
+
+.accordion[open] summary::before {
+  content: "\02B59";
+}
+
+.accordion:before[open] {
+  content: "\02A01"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--clr1);
+  float: right;
+  margin: 5px;
+}
+
+.accordion[open]::before {
+  content: ""; /* Unicode character for "minus" sign (-) */
+}

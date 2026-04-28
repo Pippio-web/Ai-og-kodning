@@ -1,0 +1,19 @@
+/*  * er gældende på hele sitet*/
+* {
+  box-sizing: border-box; /* border-box gør at border altid ligger inde i boxen. så boxen forbliver den samme størrelse */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* glidende scroll, når man går mellem sectioner */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

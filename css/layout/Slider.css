@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ 
+ 
+/* Containeren som slider-billedet indsættes i */
+.slider-container {
+    background-color: rgba(0, 0, 0, 0.306);
+    position: relative;
+}
+ 
+ 
+/* Dét billede der vises i slideren */
+.image-in-slider{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+ 
+}
+ 
+.slider-button-link {
+    /* Positionering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    /* Styling */
+    padding: 20px;
+    background-color: rgb(96, 32, 155);
+    color: white;
+    border: none;
+   
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 100;
+}
+ 
+.slider-link {
+    cursor: pointer;
+ 
+}
+ 

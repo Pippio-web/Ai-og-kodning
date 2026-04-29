@@ -7,16 +7,17 @@
     <!-- JS -->
     <!-- <script src="js/index.js" type="module"></script> -->
     <script src="js/components/accordions.js" defer></script>
-    <script src="js/components/cardsPia.js" defer></script>
+    <script src="js/components/accordionAI.js" defer></script>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/components/cardAI.js" defer></script>
     <script src="js/components/slider.js" defer></script>
-    <script src="js/components/footer.js" defer></script>
+    <script src="js/components/sliderAI.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/index.css" />
 
     <title>AI og Kodning 2026</title>
   </head>
-
 
   <body>
     <h1>AI og Kodning</h1>
@@ -36,12 +37,19 @@
 
     <!-- Accordions -->
     <div class="accordions" id="Accordions">
-        <h2 class="accordions__h2">Accordions</h2>
-      <!-- Pia kode-->
-
-      <div class="accordions__container"></div>
-
-      <!-- AI kode-->
+      <h2 class="accordions__h2">Accordions</h2>
+      <div class="accordions_sideBySide">
+        <!-- Pia kode-->
+        <div class="accordionPIA__contaioner">
+          <h1>Pia Accordions</h1>
+          <div class="accordions__container"></div>
+        </div>
+        <!-- AI kode-->
+        <div class="Accordion__AI_container">
+          <h1>AI-oversigt</h1>
+          <div id="accordionAI-container"></div>
+        </div>
+      </div>
     </div>
     <!-- Accordion slut -->
 
@@ -51,10 +59,15 @@
 
     <!-- Carts -->
     <div class="cards" id="Carts">
-        <h2 class="cards__h2">Cards</h2>
-      <!-- Pia kode-->
-       <div class="cards__container__pia"></div>
-      <!-- AI kode-->
+      <h2 class="cards__h2">Cards</h2>
+      <div class="cards__container">
+        <!-- Pia kode-->
+        <div class="cards__container__pia"></div>
+        <!-- AI kode-->
+        <div class="Cards__AI">
+          <div id="cardAI-container"></div>
+        </div>
+      </div>
     </div>
     <!-- Carts slut -->
 
@@ -65,10 +78,11 @@
     <!-- Slider -->
     <div class="slider" id="Slider"></div>
     <h2 class="slider__h2">Slider</h2>
+    <div class="sideBySide">
     <!-- Pia kode-->
     <div class="slider-container"></div>
     <!-- AI kode-->
-
+    <div id="sliderAI-container"></div></div>
     <!-- Slider slut -->
 
     <div class="hr__wrapper">
@@ -77,13 +91,15 @@
 
     <!-- Reflektioner -->
     <div class="refleksion" id="Refleksion">
-        <h2 class="ref__h2">Refleksioner</h2>
-        <p>
-            Frustration, det er lidt tid siden jeg har skrevet koderne, og de er opbygget på forskellige måder, så det tager lidt tid at huske hvordan det hænger sammen. 
-        </p>
+      <h2 class="ref__h2">Refleksioner</h2>
+      <p>
+        Frustration, det er lidt tid siden jeg har skrevet koderne, og de er
+        opbygget på forskellige måder, så det tager lidt tid at huske hvordan
+        det hænger sammen.
+      </p>
     </div>
     <!-- Accordion slut -->
 
-    <footer></footer>
+    <footer>Skrevet af Pia Nygaard Pedersen</footer>
   </body>
 </html>

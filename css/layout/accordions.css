@@ -1,3 +1,9 @@
+.accordions_sideBySide {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
 .accordion {
   background-color: var(--clr-bg1);
   color: var( --clr-text-dark);

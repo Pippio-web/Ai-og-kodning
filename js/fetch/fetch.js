@@ -1,6 +1,6 @@
-export async function fetchProfile() {
+export async function fetchCard() {
     try {
-        const response = await fetch('../Data/Profiler.json')  
+        const response = await fetch('../Data/Cards.json')  
         const API = await response.json()
         return API;
         

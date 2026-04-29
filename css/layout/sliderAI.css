@@ -1,0 +1,95 @@
+.sliderAI-container {
+    align-items: center;
+}
+
+.sliderAI-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Container der holder alle tre billeder ovenpå hinanden */
+.sliderAI-track {
+  position: relative;
+  width: 560px;
+  height: 360px;
+  flex-shrink: 0;
+}
+
+/* Hoved-billede — forreste lag */
+.sliderAI-main-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 560px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Side-billeder — bageste lag, 3/4 af main = 420 × 270 */
+.sliderAI-side {
+  position: absolute;
+  bottom: 20px;
+  width: 420px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+.sliderAI-side:hover { opacity: 0.9; }
+
+/* Venstre: stikker 35px ud til venstre */
+.sliderAI-side-prev { left: -35px; }
+
+/* Højre: stikker 35px ud til højre */
+.sliderAI-side-next { right: -35px; }
+
+.sliderAI-caption {
+  text-align: center;
+  color: var(--clr-text-dark);
+}
+.sliderAI-caption h3 { font-size: 1.2rem; font-weight: 600; margin: 0 0 0.25rem; }
+.sliderAI-caption p  { font-size: 0.95rem; margin: 0; }
+
+.sliderAI-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sliderAI-arrow,
+.sliderAI-toggle {
+  background:  var(--clr-bg1);
+  color:       var(--clr-text-dark);
+  border:      1px solid currentColor;
+  cursor:      pointer;
+  transition:  opacity 0.15s;
+}
+.sliderAI-arrow:hover,
+.sliderAI-toggle:hover { opacity: 0.7; }
+
+.sliderAI-arrow {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderAI-toggle {
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-size: 0.9rem;
+}

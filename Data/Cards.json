@@ -1,0 +1,24 @@
+[
+  {
+    "src": "assets/images/coffee1.jpg",
+    "alt": "Coffee image",
+    "heading": "Nærværd",
+    "bodyText": "Beskrivelse der siger noget om billedet",
+    "buttonLink": "https://www.dr.dk"
+  },
+  {
+    "src": "assets/images/coffee2.jpg",
+    "alt": "Coffee image",
+    "heading": "Selvtid",
+    "bodyText": "text, text og text...",
+    "buttonLink": "https://www.tv2.dk"
+  },
+  {
+    "src": "assets/images/coffee3.jpg",
+    "alt": "Coffee image",
+    "heading": "Samværd og hygge",
+    "bodyText": "Måske noget med kaffe",
+    "buttonLink": "https://www.saxo.dk"
+  }
+]
+

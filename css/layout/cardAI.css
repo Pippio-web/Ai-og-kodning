@@ -1,0 +1,48 @@
+.cardAI-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cardAI-item {
+  background: var(--clr-bg1);
+  color: var(--clr-text-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardAI-img-link {
+  display: block;
+  cursor: pointer;
+}
+
+.cardAI-img-link img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.cardAI-body {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardAI-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+  color: var(--clr-text-dark);
+}
+
+.cardAI-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+  color: var(--clr-text-dark);
+}

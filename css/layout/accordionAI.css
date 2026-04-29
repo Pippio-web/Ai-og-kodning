@@ -1,0 +1,96 @@
+.Accordion__AI_container {
+  max-width: 50%;
+  position: absolute;
+  left: 50%;
+}
+
+.accordionAI-container {
+  width: 100%;
+  max-width: 680px;
+}
+
+.accordionAI-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.accordionAI-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.accordionAI-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.accordionAI-btn:hover {
+  background: #f5f5f5;
+}
+
+.accordionAI-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.accordionAI-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.accordionAI-icon {
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+  color: #888;
+}
+
+.accordionAI-item.open .accordionAI-icon {
+  transform: rotate(45deg);
+}
+
+.accordionAI-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.accordionAI-item.open .accordionAI-body {
+  max-height: 300px;
+  padding: 0 20px 16px;
+}
+
+.accordionAI-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.accordionAI-tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 20px;
+}

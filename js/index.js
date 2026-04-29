@@ -1,11 +1,5 @@
-import { accordionsData } from "./components/accordions.js";
+import { renderCard } from "./components/cardsPia.js";
 
-import { header } from "./components/header.js";
-import { hero } from "./components/hero.js";
-import { footer } from "./components/footer.js";
 
-accordionsData();
+renderCard();
 
-header();
-hero();
-footer();

@@ -1,0 +1,21 @@
+.cards {
+   display: flex;
+   flex-direction: column;
+}
+
+.cards__container__pia {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 50%;
+    margin: 10px 20px ;
+}
+
+.cards__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card__header {
+    font-size: 1.2rem;
+}

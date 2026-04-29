@@ -1,9 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.sideBySide {
+  display: flex;
+  flex-direction: row;
 }
-
 /* Containeren som slider-billedet indsættes i */
 .slider-container {
   background-color: var(--clr-bg-dark);

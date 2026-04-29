@@ -7,6 +7,6 @@
 
 .hr__line {
   height: 1px;
-  background-color: var(--clr4-dr);
+  background-color: var(--clr-bg-dark);
   width: 100%;
 }

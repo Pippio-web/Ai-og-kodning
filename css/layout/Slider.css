@@ -1,14 +1,18 @@
 .sideBySide {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 150px;
+  flex-wrap: wrap;
 }
 /* Containeren som slider-billedet indsættes i */
 .slider-container {
   background-color: var(--clr-bg-dark);
   color: var(--clr-text-light);
   position: relative;
-  max-width: 800px;
-  margin: 20px;
+  max-width: 700px;
+margin-left: -100px;
   text-align: center;
 }
 

@@ -1,7 +1,10 @@
 .accordions_sideBySide {
-  display: flex;
+ display: flex;
   flex-direction: row;
-  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .accordion {

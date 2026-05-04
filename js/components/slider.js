@@ -27,7 +27,7 @@ const picOfPictures = document.querySelector(".slider__numberOf");
 const heading = document.querySelector(".heading");
 const bodyText = document.querySelector(".bodyText")
 
-let currentImageIndex = 0;
+let currentImageIndex = 0; 
 
 let images = [
   {

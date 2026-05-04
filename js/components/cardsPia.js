@@ -1,7 +1,6 @@
 import { fetchCard } from "../fetch/fetch.js";
 const profileCard = document.querySelector(".cards__container__pia");
 
-
 export const cardTemplate = ({
   src,
   alt,

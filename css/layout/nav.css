@@ -16,3 +16,8 @@
   margin-top: 20px;
   margin-bottom: 60px;
 }
+
+.hero__header {
+  font-size: 120px;
+  filter: drop-shadow(10px 10px 7px rgb(79, 6, 116));
+}

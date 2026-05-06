@@ -1,13 +1,13 @@
 .refleksion__container {
   margin: 0px auto;
-  padding: 40px 0 100px;
+  padding: 40px 0 0px;
   
   background: var(--clr-text-light);
   color: var(--clr-bg-dark);
 }
 .refleksion {
   max-width: 1100px;
-  margin: 10px auto;
+  margin: 10px auto 0;
  
 }
  h3 {
@@ -17,6 +17,6 @@
  .refleksion p {
  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;     
-  padding: 10px 0 30px;
+  padding: 10px 0 35px;
 
  }

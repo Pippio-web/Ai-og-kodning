@@ -1,0 +1,18 @@
+.Sammenlining__div {
+  margin: 20px auto;
+  max-width: 1100px;
+  text-align: center;
+   color: var(--clr-bg-dark);
+}
+
+.Sammenlining__div h3 {
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+}
+.Sammenlining__div p {
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;  
+  text-align: left;
+}
+
+
